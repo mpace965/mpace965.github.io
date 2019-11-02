@@ -16,12 +16,12 @@
     "keywords": [],
     "author": "matthew.dp.96@gmail.com",
     "license": "ISC",
-    "bugs": {
-        "url": ""
-    },
     "homepage": "",
     "dependencies": {
-        "normalize.css": "^8.0.0"
+        "bootstrap": "^4.3.1",
+        "jquery": "^3.4.1",
+        "normalize.css": "^8.0.0",
+        "popper.js": "^1.16.0"
     },
     "devDependencies": {
         "@fullhuman/postcss-purgecss": "^1.1.0",
