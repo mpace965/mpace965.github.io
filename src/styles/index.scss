@@ -1,1 +1,7 @@
+$blue: #a9d9e0;
+
 @import "~bootstrap/scss/bootstrap";
+
+.mm-navbar {
+    background-color: $blue;
+}
