@@ -5,3 +5,19 @@ $blue: #a9d9e0;
 .mm-navbar {
     background-color: $blue;
 }
+
+@mixin mm-jumbotron($image-url) {
+    background: url($image-url) rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: $white;
+
+    padding: 20rem 2rem;
+}
+
+.mm-jumbotron-main {
+    @include mm-jumbotron("../assets/bg-cropped.jpg");
+}
