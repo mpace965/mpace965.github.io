@@ -10,7 +10,7 @@ $font-family-base: 'Montserrat', sans-serif;
 }
 
 @mixin mm-jumbotron($image-url) {
-    background: url($image-url) rgba(0, 0, 0, 0.3);
+    background: url($image-url) rgba(0, 0, 0, 0.4);
     background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
