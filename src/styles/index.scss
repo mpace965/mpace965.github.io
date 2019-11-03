@@ -29,6 +29,10 @@ $font-family-base: 'Montserrat', sans-serif;
     padding: 20rem 2rem;
 }
 
-.mm-jumbotron-main {
-    @include mm-jumbotron("../assets/bg-about.jpg");
+.mm-jumbotron-about {
+    @include mm-jumbotron("../assets/bg1.jpg");
+}
+
+.mm-jumbotron-lodging {
+    @include mm-jumbotron("../assets/bg2.jpg");
 }
