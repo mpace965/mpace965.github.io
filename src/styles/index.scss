@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
-$blue: #a9d9e0;
+$primary:#a9d9e0;
+$secondary:#868e96;
+$success:#bbedd8;
+$danger:#e6aac6;
+$info:#c7e8ed;
+$warning:#e8df97;
+$light:#f2fdff;
+$dark:#2a3638;
 $font-family-base: 'Montserrat', sans-serif;
 
 @import "~bootstrap/scss/bootstrap";
 
-.mm-navbar {
-    background-color: $blue;
+.scroll-spy {
+    position: relative;
+    scroll-behavior: smooth;
 }
 
 @mixin mm-jumbotron($image-url) {
