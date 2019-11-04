@@ -17,22 +17,45 @@ $font-family-base: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
 
-@mixin mm-jumbotron($image-url) {
-    background: url($image-url) rgba(0, 0, 0, 0.4);
-    background-blend-mode: multiply;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+.mm-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1071;
+}
+
+@mixin mm-jumbotron($image-name) {
+
+    @media only screen and (max-width: 720px) {
+        background: url("../assets/mobile/#{$image-name}") rgba(0, 0, 0, 0.4);
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+
+        max-height: 70%;
+
+        padding: 10rem 2rem;
+    }
+
+    @media only screen and (min-width: 721px) {
+        background: url("../assets/#{$image-name}") rgba(0, 0, 0, 0.4);
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+
+        padding: 20rem 2rem;
+    }
 
     color: $white;
-
-    padding: 20rem 2rem;
 }
 
 .mm-jumbotron-about {
-    @include mm-jumbotron("../assets/bg1.jpg");
+    @include mm-jumbotron("bg1.jpg");
 }
 
 .mm-jumbotron-lodging {
-    @include mm-jumbotron("../assets/bg2.jpg");
+    @include mm-jumbotron("bg2.jpg");
 }
