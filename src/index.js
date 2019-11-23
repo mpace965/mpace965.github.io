@@ -7,7 +7,6 @@ const $ = window.$ = window.jQuery = jquery;
 
 require('bootstrap');
 
-
 $(document).ready(() => {
     $('body').scrollspy({ target: '.navbar' });
 });
