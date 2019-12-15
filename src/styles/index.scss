@@ -66,3 +66,7 @@ $font-family-base: 'Montserrat', sans-serif;
 .mm-jumbotron-schedule {
     @include mm-jumbotron("bg2.jpg");
 }
+
+.mm-jumbotron-accommodations {
+    @include mm-jumbotron("bg3.jpg");
+}
