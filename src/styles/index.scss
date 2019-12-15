@@ -23,9 +23,11 @@ $font-family-base: 'Montserrat', sans-serif;
     z-index: 1071;
 }
 
-@mixin mm-jumbotron {
+@mixin mm-jumbotron($image-name) {
 
     @media only screen and (max-width: 720px) {
+        background: url("../assets/mobile/#{$image-name}") rgba(0, 0, 0, 0.4);
+
         background-blend-mode: multiply;
         background-repeat: no-repeat;
         background-size: cover;
@@ -38,6 +40,8 @@ $font-family-base: 'Montserrat', sans-serif;
     }
 
     @media only screen and (min-width: 721px) {
+        background: url("../assets/#{$image-name}") rgba(0, 0, 0, 0.4);
+
         background-blend-mode: multiply;
         background-repeat: no-repeat;
         background-size: cover;
@@ -46,44 +50,8 @@ $font-family-base: 'Montserrat', sans-serif;
 
         padding: 20rem 2rem;
     }
-}
-
-@mixin mm-jumbotron-image($image-name) {
-    @include mm-jumbotron;
-
-    @media only screen and (max-width: 720px) {
-        background: url("../assets/mobile/#{$image-name}") rgba(0, 0, 0, 0.4);
-    }
-
-    @media only screen and (min-width: 721px) {
-        background: url("../assets/#{$image-name}") rgba(0, 0, 0, 0.4);
-    }
 
     color: $white;
-}
-
-@mixin mm-jumbotron-color($color) {
-    @include mm-jumbotron;
-
-    @media only screen and (max-width: 720px) {
-        background: $color;
-    }
-
-    @media only screen and (min-width: 721px) {
-        background: $color;
-    }
-}
-
-.mm-jumbotron-title {
-    @include mm-jumbotron-color(rgb(255,255,255));
-
-    @media only screen and (max-width: 720px) {
-        padding: 5rem 2rem;
-    }
-
-    @media only screen and (min-width: 721px) {
-        padding: 10rem 2rem;
-    }
 }
 
 .and {
@@ -92,9 +60,9 @@ $font-family-base: 'Montserrat', sans-serif;
 }
 
 .mm-jumbotron-about {
-    @include mm-jumbotron-image("bg1.jpg");
+    @include mm-jumbotron("bg1.jpg");
 }
 
-.mm-jumbotron-lodging {
-    @include mm-jumbotron-image("bg2.jpg");
+.mm-jumbotron-schedule {
+    @include mm-jumbotron("bg2.jpg");
 }
