@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "name": "wedding-site",
+  "description": "",
+  "icons": {
+    "60": "/icons-dc88e52ccd5cac62252898bf199e0caa/firefox_app_60x60.png",
+    "128": "/icons-dc88e52ccd5cac62252898bf199e0caa/firefox_app_128x128.png",
+    "512": "/icons-dc88e52ccd5cac62252898bf199e0caa/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": "matthew.dp.96@gmail.com",
+    "url": null
+  }
+}
