@@ -37,6 +37,10 @@ $font-family-base: 'Montserrat', sans-serif;
         max-height: 70%;
 
         padding: 10rem 2rem;
+
+        h1 {
+            font-size: 2.0rem;
+        }
     }
 
     @media only screen and (min-width: 721px) {
@@ -49,6 +53,10 @@ $font-family-base: 'Montserrat', sans-serif;
         background-attachment: fixed;
 
         padding: 20rem 2rem;
+
+        h1 {
+            font-size: 3.5rem;
+        }
     }
 
     color: $white;
@@ -57,6 +65,14 @@ $font-family-base: 'Montserrat', sans-serif;
 .and {
     font-family: 'Satisfy', cursive;
     line-height: 0.5;
+
+    @media only screen and (max-width: 720px) {
+        font-size: 2.5rem;
+    }
+
+    @media only screen and (min-width: 721px) {
+        font-size: 3.5rem;
+    }
 }
 
 .mm-jumbotron-about {
