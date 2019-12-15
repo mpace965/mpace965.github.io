@@ -70,3 +70,7 @@ $font-family-base: 'Montserrat', sans-serif;
 .mm-jumbotron-accommodations {
     @include mm-jumbotron("bg3.jpg");
 }
+
+.mm-jumbotron-registry {
+    @include mm-jumbotron("bg4.jpg");
+}
