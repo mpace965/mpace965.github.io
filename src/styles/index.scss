@@ -12,6 +12,10 @@ $font-family-base: 'Montserrat', sans-serif;
 
 @import "~bootstrap/scss/bootstrap";
 
+body {
+    height: 100%;
+}
+
 .scroll-spy {
     position: relative;
     scroll-behavior: smooth;

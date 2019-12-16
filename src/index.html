@@ -9,28 +9,34 @@
     <title>Matt and Madison 2020</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-light bg-light mm-navbar">
+<body data-spy="scroll" data-target=".navbar">
+    <nav class="navbar navbar-light navbar-expand-lg bg-light mm-navbar">
         <a class="navbar-brand" href="#">Matt and Madison 2020</a>
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-                <a class="nav-link" href="#about">About Us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#schedule">Schedule</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#accommodations">Accommodations</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#registry">Registry</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-            </li>
-        </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav nav-pills mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#schedule">Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#accommodations">Accommodations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#registry">Registry</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <div class="scroll-spy" data-spy="scroll" data-target=".navbar" data-offset="0">
+    <div>
         <div id="about">
             <div class="jumbotron jumbotron-fluid mm-jumbotron-about">
                 <div class="container">
@@ -136,7 +142,7 @@
                     married life!
                 </p>
                 <div>
-                    <a class="zola-registry-embed" href="www.zola.com/registry/madisonandmattp"
+                    <a class="zola-registry-embed" href="https://www.zola.com/registry/madisonandmattp"
                         data-registry-key="madisonandmattp">Our Zola Wedding Registry</a>
                     <script>!function (e, t, n) { var s, a = e.getElementsByTagName(t)[0]; e.getElementById(n) || (s = e.createElement(t), s.id = n, s.async = !0, s.src = "https://widget.zola.com/js/widget.js", a.parentNode.insertBefore(s, a)) }(document, "script", "zola-wjs");</script>
                 </div>
