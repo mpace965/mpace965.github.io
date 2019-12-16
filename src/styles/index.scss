@@ -26,7 +26,12 @@ $font-family-base: 'Montserrat', sans-serif;
 @mixin mm-jumbotron($image-name) {
 
     @media only screen and (max-width: 720px) {
-        background: url("../assets/mobile/#{$image-name}") rgba(0, 0, 0, 0.4);
+        @if str-length($image-name) == 0 {
+            background: $primary;
+        }
+        @else {
+            background: url("../assets/mobile/#{$image-name}") rgba(0, 0, 0, 0.4);
+        }
 
         background-blend-mode: multiply;
         background-repeat: no-repeat;
@@ -44,7 +49,12 @@ $font-family-base: 'Montserrat', sans-serif;
     }
 
     @media only screen and (min-width: 721px) {
-        background: url("../assets/#{$image-name}") rgba(0, 0, 0, 0.4);
+        @if str-length($image-name) == 0 {
+            background: $primary;
+        }
+        @else {
+            background: url("../assets/#{$image-name}") rgba(0, 0, 0, 0.4);
+        }
 
         background-blend-mode: multiply;
         background-repeat: no-repeat;
@@ -89,6 +99,10 @@ $font-family-base: 'Montserrat', sans-serif;
 
 .mm-jumbotron-registry {
     @include mm-jumbotron("bg4.jpg");
+}
+
+.mm-jumbotron-contact {
+    @include mm-jumbotron("");
 }
 
 .iframe-container {
