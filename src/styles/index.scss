@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Satisfy&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Satisfy&display=swap");
 
-$primary:#95c0c7;
-$secondary:#868e96;
-$success:#bbedd8;
-$danger:#e6aac6;
-$info:#c7e8ed;
-$warning:#e8df97;
-$light:#f2fdff;
-$dark:#2a3638;
-$font-family-base: 'Montserrat', sans-serif;
+$primary: #95c0c7;
+$secondary: #868e96;
+$success: #bbedd8;
+$danger: #e6aac6;
+$info: #c7e8ed;
+$warning: #e8df97;
+$light: #f2fdff;
+$dark: #2a3638;
+$font-family-base: "Montserrat", sans-serif;
 
 @import "~bootstrap/scss/bootstrap";
 
@@ -28,13 +28,12 @@ body {
 }
 
 @mixin mm-jumbotron($image-name) {
-
     @media only screen and (max-width: 720px) {
         @if str-length($image-name) == 0 {
             background: $primary;
-        }
-        @else {
-            background: url("../assets/mobile/#{$image-name}") rgba(0, 0, 0, 0.4);
+        } @else {
+            background: url("../assets/mobile/#{$image-name}")
+                rgba(0, 0, 0, 0.4);
         }
 
         background-blend-mode: multiply;
@@ -48,15 +47,14 @@ body {
         padding: 10rem 2rem;
 
         h1 {
-            font-size: 2.0rem;
+            font-size: 2rem;
         }
     }
 
     @media only screen and (min-width: 721px) {
         @if str-length($image-name) == 0 {
             background: $primary;
-        }
-        @else {
+        } @else {
             background: url("../assets/#{$image-name}") rgba(0, 0, 0, 0.4);
         }
 
@@ -77,11 +75,11 @@ body {
 }
 
 .and {
-    font-family: 'Satisfy', cursive;
+    font-family: "Satisfy", cursive;
     line-height: 0.5;
 
     @media only screen and (max-width: 720px) {
-        font-size: 2.0rem;
+        font-size: 2rem;
     }
 
     @media only screen and (min-width: 721px) {
@@ -121,7 +119,7 @@ body {
         padding-top: 42.5%;
     }
 }
-   
+
 .iframe-container iframe {
     border: 0;
     height: 100%;
