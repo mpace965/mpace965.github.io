@@ -7,7 +7,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "webpack-dev-server --config webpack.dev.js --mode development",
         "build": "webpack --config webpack.prod.js --mode production && echo mattandmadison2020.com > dist/CNAME",
-        "push": "npm run build && git subtree push --prefix dist origin master",
+        "publish": "npm run build && git add --all && git commit -m 'Publish' && git subtree push --prefix dist origin master",
         "preview": "npm run build && http-server dist"
     },
     "repository": {
